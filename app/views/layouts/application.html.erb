@@ -7,8 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="navbar-inner">
+		<a class="navbar-brand" href="#">HanielBook</a>
+		 <ul class="nav navbar-nav">
+        	<li class="active"><%= link_to "Status index", statuses_path%></li>
+        </ul>
+	</div>
+</div>
+<div class="container">
+<%= yield %> <!--Llama la clase parcial-->
+</div>
 </body>
 </html>
